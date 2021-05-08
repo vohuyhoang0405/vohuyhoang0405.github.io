@@ -37,7 +37,7 @@ a {
     z-index: -1;
 }
 .top-bg-color {
-    /* background-color: hsla(0, 8%, 36%, 0.753); */
+    /* background-color: hsla(0, 11%, 23%, 0.753); */
     /* height: 700px; */
     height: 70vh;
     background-color: hsla(10, 15%, 39%, 0.753);
@@ -58,7 +58,9 @@ a {
 .right-menu li {
     padding-right: 40px;
     text-transform: uppercase;
-    
+}
+.right-menu li a {
+    color: aliceblue;
 }
 .main-nav {
     display: flex;
@@ -93,7 +95,8 @@ a {
 .main-nav h1 {
     font-size: 24px;
     /* color:#555; */
-    color:rgb(46, 44, 44);
+    /* color:rgb(46, 44, 44); */
+    color:rgb(248, 242, 242);
     font-weight: 600;
     font-family: "Poppins", sans-serif;
     cursor: pointer;
@@ -101,12 +104,14 @@ a {
 
 /* introduce */
 .introduce span {
-    color: #f44336;
+    /* color: #f44336; */
+    color: rgb(255, 253, 161);
     font-weight: 700;
 }
 .introduce .txt-type {
-    color:#000;
-    border-right: #000 solid 2px;
+    color:rgb(173, 169, 169);
+    
+    border-right: rgb(173, 169, 169) solid 2px;
 }
 .introduce {
     margin:20vh 0 30vh;
@@ -114,16 +119,19 @@ a {
 }
 .introduce p {
     font-size: 26px;
+    color: whitesmoke;
 }
 .introduce h1 {
     font-size: 36px;
     margin-bottom: 30px;
+    color: rgb(173, 169, 169);
 }
 .btn {
     display: inline-block;
     z-index: 2;
     position: relative;
-    color: rgb(75, 247, 247);
+    /* color: rgb(75, 247, 247); */
+    color: rgb(255, 253, 161);
     text-transform: none;
 }
 
@@ -152,8 +160,8 @@ a {
     left: 0;
     transition: .5s ease;
     z-index: 1;
-    
 }
+
 .introduce-bg:hover .overlay-bg {
     width:100%;
     
