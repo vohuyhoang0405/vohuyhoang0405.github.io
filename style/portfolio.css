@@ -28,7 +28,8 @@ a {
 
 .top-bg {
     background: url(../img/avatar1.png) no-repeat center top/cover;
-    height: 700px;
+    /* height: 700px; */
+    height: 70vh;
     position: absolute;
     top: 0;
     left: 0;
@@ -37,7 +38,8 @@ a {
 }
 .top-bg-color {
     /* background-color: hsla(0, 8%, 36%, 0.753); */
-    height: 700px;
+    /* height: 700px; */
+    height: 70vh;
     background-color: hsla(10, 15%, 39%, 0.753);
 }
 /* container  */
@@ -107,7 +109,7 @@ a {
     border-right: #000 solid 2px;
 }
 .introduce {
-    margin:250px 0 300px;
+    margin:20vh 0 30vh;
     
 }
 .introduce p {
@@ -410,6 +412,9 @@ footer {
 
 /* break point  */
 @media(max-width:950px) {
+    .showcase-list {
+        width: 80%;
+    }
     .right-menu {
         display: block;
         position: absolute;
@@ -428,7 +433,7 @@ footer {
         display: block;
         position: absolute;
         top: 20px;
-        right: 80px;
+        right: 50px;
         cursor: pointer;
     }
     .right-menu li {
@@ -504,6 +509,9 @@ footer {
     .introduce h1 {
         font-size: 28px;
         
+    }
+    .showcase-list {
+        width: 100%;
     }
 }
 @media(max-width:360px){
