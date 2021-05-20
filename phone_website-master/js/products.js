@@ -19,12 +19,13 @@ const categoryCenter = document.querySelector(".category__center");
 window.addEventListener("DOMContentLoaded", async function () {
   const products = await getProducts();
   displayProductItems(products);
+  
 });
 
 const displayProductItems = items => {
   let displayProduct = items.map(
     product => ` 
-                  <div class="product category__products">
+                  <div class="product category__products" data-aos="fade-up" data-aos-duration="1200">
                     <div class="product__header">
                       <img src=${product.image} alt="product">
                     </div>
@@ -82,6 +83,7 @@ const displayProductItems = items => {
   displayProduct = displayProduct.join("");
   if (categoryCenter) {
     categoryCenter.innerHTML = displayProduct;
+    
   }
 };
 
@@ -125,11 +127,7 @@ if (categoryContainer) {
   });
 }
 
-/*
-=============
-Product Details Left
-=============
- */
+
 const pic1 = document.getElementById("pic1");
 const pic2 = document.getElementById("pic2");
 const pic3 = document.getElementById("pic3");
@@ -156,25 +154,14 @@ let picActive = 1;
   }
 });
 
-// change active image
+
 const changeImage = (imgSrc, n) => {
-  // change the main image
   pic.src = imgSrc;
-  // change the background-image
   zoom.style.backgroundImage = `url(${imgSrc})`;
-  //   remove the border from the previous active side image
   picList[picActive - 1].classList.remove("img-active");
-  // add to the active image
   picList[n - 1].classList.add("img-active");
-  //   update the active side picture
   picActive = n;
 };
-
-/*
-=============
-Product Details Bottom
-=============
- */
 
 const btns = document.querySelectorAll(".detail-btn");
 const detail = document.querySelector(".product-detail__bottom");
