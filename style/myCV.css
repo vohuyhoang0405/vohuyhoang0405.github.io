@@ -73,3 +73,32 @@ a:hover {
 #myImg{
     cursor: pointer;
 }
+
+
+
+
+
+/* breakpoint */
+@media(max-width:1600px) {
+    .content {
+        width: 80%;
+    }
+
+}
+
+@media(max-width:1400px) {
+    .content {
+        width: 90%;
+    }
+
+}
+@media(max-width:1200px) {
+    .content {
+        display: block;
+        text-align: center;
+    }
+    .address {
+        justify-content: center;
+    }
+
+}
