@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded',() => {
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = false; // Auto scroll
+const auto = true; // Auto scroll
 const intervalTime = 5000;
 let slideInterval;
 
