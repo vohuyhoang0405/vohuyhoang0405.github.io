@@ -305,9 +305,12 @@ a {
   
   .slide .content h1 {
     margin-bottom: 10px;
+    font-family: serif;
   }
   .content p {
       color:#074983 ;
+      font-size: 20px;
+      font-weight: 700;
   }
   
   .slide.current .content {
