@@ -368,8 +368,8 @@ a {
       center center/cover;
   }
   .slide:nth-child(2) {
-    background: url('https://source.unsplash.com/BeOW_PJjA0w/1600x900') no-repeat
-      center top/cover;
+    background: url('../img/can2.jpg') no-repeat
+    center center/cover;
   }
   .slide:nth-child(3) {
     background: url('https://source.unsplash.com/TMOeGZw9NY4/1600x900') no-repeat
