@@ -22,6 +22,7 @@ a:hover {
 .top-background img {
     border-radius: 50%;
     width: 200px;
+    
     height: 200px;
     bottom: -15%;
     left: 50%;
@@ -39,6 +40,9 @@ a:hover {
     width: 70%;
     margin: 200px auto;
     justify-content: space-around;
+}
+.content img {
+    width: 80%;
 }
 .about-content {
     width: 70%;
@@ -74,8 +78,42 @@ a:hover {
     cursor: pointer;
 }
 
-
-
+.container {
+    width: 80%;
+    max-width: 1100px;
+    margin: auto;
+    padding-top: 20px;
+}
+footer {
+    
+    text-align: center;
+    
+}
+.container-footer {
+    
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 500;
+    color:#555;
+    line-height: 25px;
+    
+    padding: 50px 0 30px;
+}
+.text-footer {
+    padding: 50px 0;
+    font-size: 15px;
+    border-top: 1px solid #ccc;
+}
+.container-footer i {
+    font-size: 32px;
+    color: #555;
+    margin-bottom: 20px;
+}
+.text-footer span,.text-footer i {
+    color: #f44336;
+}
 
 
 /* breakpoint */
